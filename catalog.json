@@ -1,0 +1,419 @@
+[
+  {
+    "code": "CPSC 120",
+    "name": "Introduction to Programming",
+    "units": 3,
+    "description": "Introduction to the concepts underlying all computer programming: design and execution of programs; sequential nature of programs; use of assignment, control and input/output statements to accomplish desired tasks; design and use of functions. Structured and object-oriented methodologies. (1.5 hours lecture, 3 hours laboratory) Corequisite: MATH 125.",
+    "prerequisites": [],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Programming (General)"
+    ]
+  },
+  {
+    "code": "CPSC 121",
+    "name": "Object-Oriented Programming",
+    "units": 3,
+    "description": "The object-oriented programming paradigm: classes, member functions, interfaces, inheritance, polymorphism, and exceptions. Design practices including encapsulation, decoupling, and documentation. Pointers/references and memory management. Recursion. (2 hours lecture, 2 hours activity)",
+    "prerequisites": [
+      "CPSC 120"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Programming (General)"
+    ]
+  },
+  {
+    "code": "CPSC 131",
+    "name": "Data Structures",
+    "units": 3,
+    "description": "Classical data structures: vector, linked list, stack, queue, binary search tree, and graph representations. Worst-case analysis, amortized analysis, and big-O notation. Object-oriented and recursive implementation of data structures. Self-resizing vectors and self-balancing trees. Empirical performance measurement. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 121"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Programming (General)"
+    ]
+  },
+  {
+    "code": "CPSC 223J",
+    "name": "Java Programming",
+    "units": 3,
+    "description": "Characteristics of Java: portable, robust, secure, object-oriented, high performance; using the Java environment; server administration; types, expressions and control flow; classes, interfaces and packages; threads; exceptions; class libraries; Java for the Internet; tools, the Java Virtual machine. (2 hours lecture, 2 hours lab per week) Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 131"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Programming (General)",
+      "Java"
+    ]
+  },
+  {
+    "code": "CPSC 223N",
+    "name": "Visual C# Programming",
+    "units": 3,
+    "description": "Characteristics of C#, object-oriented design concepts, control structures, methods, arrays, classes, objects, inheritance, polymorphism, exception handling, graphical user interfaces, multithreading, characters, strings, files, streams. Rudiments of the Unified Modeling Language Software development assignments. (2 hours lecture, 2 hours laboratory) Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 131",
+      "C#"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Programming (General)"
+    ]
+  },
+  {
+    "code": "CPSC 240",
+    "name": "Computer Organization and Assembly Language",
+    "units": 3,
+    "description": "Digital logic and architecture of a computer system, machine level representation of data, memory system organization, structure of low-level computer languages. Machine, assembly, and macro language programming. Principles of assembler operation, input-output programming, interrupt/exception handling. Laboratory programming assignments. (2 hours lecture, 2 hours laboratory) Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 131",
+      "MATH 170A",
+      "MATH 280"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Computer Architecture"
+    ]
+  },
+  {
+    "code": "CPSC 315",
+    "name": "Professional Ethics in Computing",
+    "units": 3,
+    "description": "Ethics and moral philosophy as applied to software and digital artifacts. Notions of rights, responsibilities, property, ownership, privacy, security, and professional ethics. Security obligations. Intellectual propertystatutes, licenses, and their terms. Oral and written reports are required. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 131"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Ethics & Law"
+    ]
+  },
+  {
+    "code": "CPSC 323",
+    "name": "Compilers and Languages",
+    "units": 3,
+    "description": "Basic concepts of programming languages and principles of translation. Topics include history of programming languages, various programming paradigms, language design issues and criteria, design of compilers for modern programming languages. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [
+      "CPSC 131"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Theory"
+    ]
+  },
+  {
+    "code": "CPSC 332",
+    "name": "File Structures and Database Systems",
+    "units": 3,
+    "description": "Fundamental theories and design of database systems, the Structured Query Language (SQL), basic concepts and techniques of data organization in secondary storage. Topics include introduction to database systems, ER model, relational model, index structures and hashing techniques. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring/Summer Add to Portfolio (opens a new window) Add to My Favorites (opens a new window) Share this Page Print (opens a new window)",
+    "prerequisites": [
+      "CPSC 131"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Databases"
+    ]
+  },
+  {
+    "code": "CPSC 335",
+    "name": "Algorithm Engineering",
+    "units": 3,
+    "description": "Algorithm design using classical patterns: exhaustive search, divide and conquer, randomization, hashing, reduction, dynamic programming, and the greedy method. Asymptotic and experimental efficiency analysis. NP-completeness and decidability. Implementing algorithms to solve practical problems. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [
+      "CPSC 131",
+      "MATH 170A",
+      "MATH 150A"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Theory"
+    ]
+  },
+  {
+    "code": "CPSC 386",
+    "name": "Introduction to Game Design and Production",
+    "units": 3,
+    "description": "Current and future technologies and market trends in game design and production. Game technologies, basic building tools for games and the process of game design, development and production. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [
+      "CPSC 121"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Game Development",
+      "C#"
+    ]
+  },
+  {
+    "code": "CPSC 431",
+    "name": "Database and Applications",
+    "units": 3,
+    "description": "Database design and application development techniques for a real world system. System analysis, requirement specifications, conceptual modeling, logic design, physical design and web interface development. Develop projects using contemporary database management system and web-based application development platform. 400-level Undergraduate Course available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 332"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Databases"
+    ]
+  },
+  {
+    "code": "CPSC 440",
+    "name": "Computer System Architecture",
+    "units": 3,
+    "description": "Computer performance, price/performance, instruction set design and examples. Processor design, pipelining, memory hierarchy design and input/output subsystems. 400-level Undergraduate Course available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 240"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Computer Architecture"
+    ]
+  },
+  {
+    "code": "CPSC 362",
+    "name": "Foundations of Software Engineering",
+    "units": 3,
+    "description": "Basic concepts, principles, methods, techniques and practices of software engineering. All aspects of the software engineering fields. Use Computer-Aided Software Engineering (CASE) tools. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [
+      "CPSC 131"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Software Engineering",
+      "Development Methodology"
+    ]
+  },
+  {
+    "code": "CPSC 466",
+    "name": "Software Process",
+    "units": 3,
+    "description": "Practical guidance for improving the software development process. How to establish, maintain and improve software processes. Exposure to agile processes, ISO 12207 and CMMI. 400-level Undergraduate Course available for Graduate Credit One or more sections may be offered in any online format. Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [
+      "CPSC 362"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Software Engineering",
+      "Development Methodology"
+    ]
+  },
+  {
+    "code": "CPSC 471",
+    "name": "Computer Communications",
+    "units": 3,
+    "description": "Introduction to digital data communications. Terminology, networks and their components, common-carrier services, telecommunication facilities, terminals, error control, multiplexing and concentration techniques. 400-level Undergraduate Course available for Graduate Credit Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [
+      "CPSC 351"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Networks"
+    ]
+  },
+  {
+    "code": "CPSC 481",
+    "name": "Artificial Intelligence",
+    "units": 3,
+    "description": "Using computers to simulate human intelligence. Production systems, pattern recognition, problem solving, searching game trees, knowledge representation and logical reasoning. Programming in AI environments. 400-level Undergraduate Course available for Graduate Credit Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [
+      "CPSC 335",
+      "MATH 338"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "AI",
+      "Neural Networks",
+      "Machine Learning"
+    ]
+  },
+  {
+    "code": "CPSC 483",
+    "name": "Introduction to Machine Learning",
+    "units": 3,
+    "description": "Design, implement and analyze machine learning algorithms, including supervised learning and unsupervised learning algorithms. Methods to address uncertainty. Projects with real-world data. 400-level Undergraduate Course available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 335",
+      "MATH 338"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "AI",
+      "Data Science"
+    ]
+  },
+  {
+    "code": "CPSC 485",
+    "name": "Computational Bioinformatics",
+    "units": 3,
+    "description": "Algorithmic approaches to biological problems. Specific topics include motif finding, genome rearrangement, DNA sequence comparison, sequence alignment, DNA sequencing, repeat finding and gene expression analysis. 400-level Undergraduate Course available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 131"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Bioinformatics"
+    ]
+  },
+  {
+    "code": "CPSC 352",
+    "name": "Cryptography",
+    "units": 3,
+    "description": "Introduction to cryptography and steganography. Encryption, cryptographic hashing, certificates, and signatures. Classical, symmetric-key, and public-key ciphers. Block modes of operation. Cryptanalysis including exhaustive search, man-in-the-middle, and birthday attacks. Programing projects involving implementation of cryptographic systems. 400-level Undergraduate Course available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "MATH 170B",
+      "CPSC 131",
+      "CPSC 253"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Cybersecurity",
+      "Encryption"
+    ]
+  },
+  {
+    "code": "CPSC 253",
+    "name": "Cybersecurity Foundations and Principles",
+    "units": 3,
+    "description": "Security goals, security systems, access controls, networks and security, integrity, cryptography fundamentals, authentication. Attacks: software, network, website; management considerations, security standards in government and industry; security issues in requirements, architecture, design, implementation, testing, operation, maintenance, acquisition and services. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Cybersecurity"
+    ]
+  },
+  {
+    "code": "CPSC 351",
+    "name": "Operating Systems Concepts",
+    "units": 3,
+    "description": "Resource management, memory organization, input/output, control process synchronization and other concepts as related to the objectives of multi-user operating systems. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [
+      "CPSC 131",
+      "CPSC 240"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Operating Systems"
+    ]
+  },
+  {
+    "code": "CPSC 375",
+    "name": "Introduction to Data Science and Big Data",
+    "units": 3,
+    "description": "Techniques for data preparation, exploratory analysis, statistical modeling, machine learning and visualization. Methods for analyzing different types of data, such as natural language and time-series, from emerging applications, including Internet-of-Things. Big data platforms. Projects with real-world data. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring/Summer",
+    "prerequisites": [
+      "CPSC 131",
+      "MATH 338."
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Data Science",
+      "Python"
+    ]
+  },
+  {
+    "code": "CPSC 459",
+    "name": "Blockchain Technologies",
+    "units": 3,
+    "description": "Digital assets as a medium of exchange to secure financial transactions; decentralized and distributed ledgers that record verifiable transactions; smart contracts and Ethereum; Bitcoin mechanics and mining; the cryptocurrency ecosystem; blockchain mechanics and applications. 400-level Undergraduate Course available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 351",
+      "CPSC 352",
+      "CPSC 253"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Blockchain",
+      "Cryptocurrency"
+    ]
+  },
+  {
+    "code": "CPSC 120A",
+    "name": "Introduction to Programming Lecture",
+    "units": 2,
+    "description": "Introduction computer science and computer programming, including designing programs; sequential execution; variables, assignment and arithmetic; control flow, Boolean logic, selection and loops; input/output; functions; debugging; practical applications; and development methodologies. (50-minute lecture) Corequisite: CPSC 120L. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Programming (General)"
+    ]
+  }
+]

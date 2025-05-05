@@ -1,0 +1,56 @@
+{
+    "Lower-Division Core": [
+      "CPSC 120",
+      "CPSC 121",
+      "CPSC 131",
+      "CPSC 223C",
+      "CPSC 223J",
+      "CPSC 223N",
+      "CPSC 223P",
+      "CPSC 240"
+    ],
+    "Upper-Division Core": [
+      "CPSC 315",
+      "CPSC 323",
+      "CPSC 332",
+      "CPSC 335",
+      "CPSC 351",
+      "CPSC 353",
+      "CPSC 362",
+      "CPSC 471",
+      "CPSC 481",
+      "CPSC 490",
+      "CPSC 491"
+    ],
+    "Electives": [
+      "CPSC 254",
+      "CPSC 301",
+      "CPSC 349",
+      "CPSC 375",
+      "CPSC 386",
+      "CPSC 411",
+      "CPSC 431",
+      "CPSC 439",
+      "CPSC 440",
+      "CPSC 449",
+      "CPSC 452",
+      "CPSC 454",
+      "CPSC 455",
+      "CPSC 456",
+      "CPSC 458",
+      "CPSC 459",
+      "CPSC 462",
+      "CPSC 463",
+      "CPSC 464",
+      "CPSC 466",
+      "CPSC 474",
+      "CPSC 479",
+      "CPSC 483",
+      "CPSC 484",
+      "CPSC 485",
+      "CPSC 486",
+      "CPSC 489",
+      "CPSC 499"
+    ]
+  }
+  
