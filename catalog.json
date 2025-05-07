@@ -46,6 +46,23 @@
     ]
   },
   {
+    "code": "CPSC 223C",
+    "name": "C Programming",
+    "units": 3,
+    "description": "Systems programming in the C language, including its syntax and semantics; essential idioms; important parts of the C11 and POSIX C APIs; security issues; and notable extensions libraries. Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 131"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Programming (General)",
+      "C"
+    ]
+  },
+  {
     "code": "CPSC 223J",
     "name": "Java Programming",
     "units": 3,
@@ -70,6 +87,40 @@
     "prerequisites": [
       "CPSC 131",
       "C#"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Programming (General)"
+    ]
+  },
+  {
+    "code": "CPSC 223P",
+    "name": "Python Programming",
+    "units": 3,
+    "description": "Characteristics of Python: portable, robust, secure, object-oriented, functional, high performance, extensible; types, expressions, and control flow; classes, abstract base classes, modules, and packages; threads; exceptions; Python standard library. 2 hours lecture and 2 hours laboratory per week) Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 131",
+      "Python"
+    ],
+    "majors": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "interests": [
+      "Programming (General)"
+    ]
+  },
+  {
+    "code": "CPSC 223W",
+    "name": "Swift Programming",
+    "units": 3,
+    "description": "Introduction to Swift, a programming language primarily used to develop software for Apple operating systems. Introduces skills to learn a new programming language. (2 hours lecture, 2 hours lab per week) Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
+    "prerequisites": [
+      "CPSC 131",
+      "Swift"
     ],
     "majors": [
       "Computer Science",
@@ -415,5 +466,86 @@
     "interests": [
       "Programming (General)"
     ]
+  },
+  {
+    "code": "CPSC 349",
+    "name": "Web Front-End Engineering",
+    "units": 3,
+    "description": "Concepts and architecture of interactive web applications, including markup, stylesheets and behavior. Functional and object-oriented aspects of JavaScript. Model-view design patterns, templates and frameworks. Client-side technologies for asynchronous events, real-time interaction and access to back-end web services..",
+    "prerequisites": ["CPSC 131"],
+    "majors": ["Computer Science"],
+    "interests": ["Web Development", "Front-End"]
+  },
+  {
+    "code": "CPSC 411",
+    "name": "Mobile Device Application Programming",
+    "units": 3,
+    "description": "Introduction to developing applications for mobile devices, including but not limited to runtime environments, development tools and debugging tools used in creating applications for mobile devices. Use emulators in lab. Students must provide their own mobile devices.",
+    "prerequisites": ["CPSC 131"],
+    "majors": ["Computer Science"],
+    "interests": ["Mobile Development"]
+  },
+  {
+    "code": "CPSC 411A",
+    "name": "Mobile Device Application Programming for Android",
+    "units": 3,
+    "description": "Introduction to developing applications for Android mobile devices, including but not limited to runtime environments, development tools and debugging tools used in creating applications for mobile devices. Use emulators in lab. Students must provide own mobile devices.",
+    "prerequisites": ["CPSC 131"],
+    "majors": ["Computer Science"],
+    "interests": ["Android", "Mobile Development"]
+  },
+  {
+    "code": "CPSC 439",
+    "name": "Theory of Computation",
+    "units": 3,
+    "description": "Introduction to the theory of computation. Automata theory; finite state machines, context free grammars, and Turing machines; hierarchy of formal language classes. Computability theory and undecidable problems. Time complexity; P and NP-complete problems. Applications to software design and security.",
+    "prerequisites": ["CPSC 335", "MATH 170B"],
+    "majors": ["Computer Science"],
+    "interests": ["Algorithms"]
+  },
+  {
+    "code": "CPSC 449",
+    "name": "Web Back-End Engineering",
+    "units": 3,
+    "description": "Design and architecture of large-scale web applications. Techniques for scalability, session management and load balancing. Dependency injection, application tiers, message queues, web services and REST architecture. Caching and eventual consistency. Data models, partitioning and replication in relational and non-relational databases.",
+    "prerequisites": ["CPSC 332"],
+    "majors": ["Computer Science"],
+    "interests": ["Back-End"]
+  },
+  {
+    "code": "CPSC 454",
+    "name": "Cloud Computing and Security",
+    "units": 3,
+    "description": "Cloud computing and cloud security, distributed computing, computer clusters, grid computing, virtual machines and virtualization, cloud computing platforms and deployment models, cloud programming and software environments, vulnerabilities and risks of cloud computing, cloud infrastructure protection, data privacy and protection.",
+    "prerequisites": ["CPSC 351"],
+    "majors": ["Computer Science"],
+    "interests": ["Cloud Computing", "DevOps", "Cybersecurity"]
+  },
+  {
+    "code": "CPSC 455",
+    "name": "Web Security",
+    "units": 3,
+    "description": "Concepts of web application security. Web security mechanisms, including authentication, access control and protecting sensitive data. Common vulnerabilities, including code and SQL attacks, cross-site scripting and cross-site request forgery. Implement hands-on web application security mechanisms and security testing.",
+    "prerequisites": ["CPSC 253"],
+    "majors": ["Computer Science"],
+    "interests": ["Cybersecurity", "Web Security"]
+  },
+  {
+    "code": "CPSC 456",
+    "name": "Network Security Fundamentals",
+    "units": 3,
+    "description": "Learn about vulnerabilities of network protocols, attacks targeting confidentiality, integrity and availability of data transmitted across networks, and methods for diagnosing and closing security gaps through hands-on exercises.",
+    "prerequisites": ["CPSC 351"],
+    "majors": ["Computer Science"],
+    "interests": ["Network Security", "Cybersecurity"]
+  },
+  {
+    "code": "CPSC 458",
+    "name": "Malware Analysis",
+    "units": 3,
+    "description": "Introduction to principles and practices of malware analysis. Topics include static and dynamic code analysis, data decoding, analysis tools, debugging, shellcode analysis, reverse engineering of stealthy malware and written presentation of analysis results.",
+    "prerequisites": ["CPSC 351", "CPSC 253"],
+    "majors": ["Computer Science"],
+    "interests": ["Malware", "Cybersecurity"]
   }
 ]
