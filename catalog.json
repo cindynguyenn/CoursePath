@@ -85,15 +85,15 @@
     "units": 3,
     "description": "Characteristics of C#, object-oriented design concepts, control structures, methods, arrays, classes, objects, inheritance, polymorphism, exception handling, graphical user interfaces, multithreading, characters, strings, files, streams. Rudiments of the Unified Modeling Language Software development assignments. (2 hours lecture, 2 hours laboratory) Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
     "prerequisites": [
-      "CPSC 131",
-      "C#"
+      "CPSC 131"
     ],
     "majors": [
       "Computer Science",
       "Computer Engineering"
     ],
     "interests": [
-      "Programming (General)"
+      "Programming (General)",
+      "C#"
     ]
   },
   {
@@ -102,15 +102,15 @@
     "units": 3,
     "description": "Characteristics of Python: portable, robust, secure, object-oriented, functional, high performance, extensible; types, expressions, and control flow; classes, abstract base classes, modules, and packages; threads; exceptions; Python standard library. 2 hours lecture and 2 hours laboratory per week) Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
     "prerequisites": [
-      "CPSC 131",
-      "Python"
+      "CPSC 131"
     ],
     "majors": [
       "Computer Science",
       "Computer Engineering"
     ],
     "interests": [
-      "Programming (General)"
+      "Programming (General)",
+      "Python"
     ]
   },
   {
@@ -119,15 +119,15 @@
     "units": 3,
     "description": "Introduction to Swift, a programming language primarily used to develop software for Apple operating systems. Introduces skills to learn a new programming language. (2 hours lecture, 2 hours lab per week) Undergraduate Course not available for Graduate Credit Typically Offered: Fall/Spring",
     "prerequisites": [
-      "CPSC 131",
-      "Swift"
+      "CPSC 131"
     ],
     "majors": [
       "Computer Science",
       "Computer Engineering"
     ],
     "interests": [
-      "Programming (General)"
+      "Programming (General)",
+      "Swift"
     ]
   },
   {
