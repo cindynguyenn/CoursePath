@@ -6,15 +6,16 @@ import sys
 import json
 import os
 import openai
-from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv
 
 # load the .env file
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# profile of somesort that acts like tda and shows courses theyve taken
+# File used to track completed courses and interests
 RECORD_FILE = "record.json"
 
+# Load student profile from json in directory or return empty if missing
 def load_profile():
     if os.path.exists(RECORD_FILE):
         with open(RECORD_FILE, "r") as f:
@@ -22,11 +23,12 @@ def load_profile():
     else:
         return {"completed_courses": []}
 
+# Save student profile to json
 def save_profile(profile):
     with open(RECORD_FILE, "w") as f:
         json.dump(profile, f)
 
-# shows their TDA
+# Displays user's completed courses
 def display_profile(profile):
     print("\nHere is your current record!")
     if profile["completed_courses"]:
@@ -35,8 +37,7 @@ def display_profile(profile):
     else:
         print("You haven't added any courses yet.")
         
-        
-# user can add courses theyve taken to tda/record
+# Let's the user update their profile (add/remove courses or interests)
 def update_profile(profile, courses):
     print("\nSelect an option:")
     print("1. Add a completed course")
@@ -44,21 +45,28 @@ def update_profile(profile, courses):
     print("3. Remove an interest")
     option = input("Enter the option number: ")
     
-    # can add courses theyve cmpleted
+    # Adding a completed course
     if option == "1": 
         display_courses(courses)
-        course_code = input("\nEnter the course code you completed: ")
+        course_input = input("\nEnter the course codes you completed (seperated by commas): ")
+        entered_codes = [code.strip().upper() for code in course_input.split(",")]
     
         valid_codes = [course["code"] for course in courses]
-        if course_code in valid_codes:
-            if course_code not in profile["completed_courses"]:
-                profile["completed_courses"].append(course_code)
-                save_profile(profile)
-                print(f"{course_code} has been added to your TDA.")
-            else:
-                print("Course already added to your profile.")
-        else:
-            print("Invalid course code.")
+        added_any = False
+
+        for code in entered_codes:
+            if code in valid_codes:
+                if code in valid_codes:
+                    if code not in profile ["completed_courses"]:
+                        profile["completed_courses"].append(code)
+                        print(f"{code} added to your TDA.")
+                        added_any = True
+                    else:
+                        print(f"{code} is already in your profile.")
+                else:
+                    print(f"{code} is not a valid course code.")
+        if added_any:
+            save_profile(profile)
     
     # can add interests,. will display their current interests and a list so they can see what they can add to make code work
     elif option == "2":
@@ -73,54 +81,68 @@ def update_profile(profile, courses):
         for interest in all_catalog_interests:
             print(f"- {interest}")
         
-        new_interest = input("\nEnter an interest you have: ").strip()
-        if new_interest not in profile["interests"]:
-            profile["interests"].append(new_interest)
+        interest_input = input("\nEnter your interests (seperated by commas): ").strip()
+        entered_interests = [i.strip() for i in interest_input.split(",") if i.strip()]
+
+        added_any = False
+
+        for interest in entered_interests:
+            if interest not in profile["interests"]:
+                profile["interests"].append(interest)
+                print(f"'{interest}' added to your profile.")
+                added_any = True
+            else:
+                print(f"'{interest}' is already in your profile!")
+
+        if added_any:
             save_profile(profile)
-            print(f"'{new_interest}' has been added to your profile.")
-        else:
-            print(f"'{new_interest}' is already in your profile or is invalid.")
     
-    # can remove itnerests        
+    # Remove existing interests       
     elif option == "3":
         print("\nCurrent interests: ")
         for interest in profile["interests"]:
             print(f"- {interest}")
         
-        interest_to_remove = input("\nEnter the interest you want to remove: ").strip()
-        if interest_to_remove in profile["interests"]:
-            profile["interests"].remove(interest_to_remove)
-            save_profile(profile)
-            print(f"'{interest_to_remove}' has been removed from your profile.")
-        else:
-            print(f"'{interest_to_remove}' is not in your profile.")
-        
-    else:
-        print("Invalid option selected.")
+        interest_input = input("\nEnter the interests you want to remove (seperated by commas): ").strip()
+        interests_to_remove = [i.strip() for i in interest_input.split(",") if i.strip()]
 
-# load courses frm json
+        removed_any = False
+
+        for interest in interests_to_remove:
+            if interest in profile["interests"]:
+                profile["interests"].remove(interest)
+                print(f"'{interest}' removed from your profile.")
+                removed_any = True
+            else:
+                print(f"'{interest}' is not in your profile!")
+
+        if removed_any:
+            save_profile(profile)
+
+# Load available courses from catalog.json
 def load_courses(filename):
     with open(filename, "r") as f:
         return json.load(f)
 
-# display courses in json file
+# Prints course codes, name, and unit count for each course
 def display_courses(courses):
     print("\nHere is a list of the courses available:\n")
     for course in courses:
         print(f"{course['code']} - {course['name']} ({course['units']} units)")
 
-# check if prereqs are met
+# Checks if the user has met prerequisites for a course
 def met_prereqs(course, completed_courses):
     for prereq in course["prerequisites"]:
         if prereq not in completed_courses:
             return False
     return True
 
-# recommendation system
+# Asks GPT-3.5 a question using the user's profile + available courses
 def recommend_system(courses, profile, question):
     completed = profile.get("completed_courses", [])
     course_summaries = []
 
+    # Prepares a summary of all courses the user hasn't completed
     for course in courses:
         course_summaries.append({
             "code": course["code"],
@@ -139,12 +161,14 @@ def recommend_system(courses, profile, question):
             desc = c.get("description", "")
             catalog_summary += f"  Description: {desc[:150]}...\n\n"
 
+    # Construct GPT prompt
     prompt = [
         {"role": "system", "content":(
             "You are a helpful academic advisor. Suggest courses from the catalog based on the student's completed courses and interests."
             "Be specific, helpful, and reference course codes/"
         )},
         {"role": "user", "content": f"My completed courses: {', '.join(completed)}"},
+        {"role": "user", "content": f"My interests {', '.join(profile.get('interests', []))}"},
         {"role": "user", "content": f"Here is the course catalog:\n{catalog_summary}"},
         {"role": "user", "content": question}
     ]
