@@ -4,8 +4,8 @@ from coursepath import load_profile, load_courses, recommend_system, save_profil
 
 # Create the main window
 root = tk.Tk()
-root.title("Course Advisor")  # window title
-root.geometry("800x600")      # window size
+root.title("Course Advisor")  
+root.geometry("800x600")      
 
 # Add a heading label
 title_label = tk.Label(root, text="CSUF Course Recommender", font=("Helvetica", 18))
