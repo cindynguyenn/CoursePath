@@ -1,3 +1,31 @@
+# ============================================================================================================================================
+# Program Name: "coursepath.py"                                                                                                              =
+# Program Description: This program is an course recommender for students who are unsure about what course they would like to take.          =
+# ============================================================================================================================================
+
+# ============================================================================================================================================
+# Author Information:                                                                                                                        =
+#   Author Name: Cindy Nguyen                                                                                                                =
+#                Jacob Carlton                                                                                                               =
+#   Author Email: ciindynguyen@csu.fullerton.edu                                                                                             =
+#                 jrcarlton17@csu.fullerton.edu                                                                                              =
+#                                                                                                                                            =
+# Program Information:                                                                                                                       =
+#   Program Name: coursepath                                                                                                                 =
+#   Program Languages: python                                                                                                                =
+#   Assemble: python coursepath.py                                                                                                           =
+#   Date of last update: 05/07/2025                                                                                                          =
+#   Comments reorganized: 05/07/2025                                                                                                         =
+#                                                                                                                                            =
+# Purpose:                                                                                                                                   =
+#   The purpose of this program is to utilize AI to recommend Computer Science courses for students.                                         =
+#                                                                                                                                            =
+# References:                                                                                                                                =
+#                                                                                                                                            =  
+# ============================================================================================================================================
+
+# ===== Begin code area ======================================================================================================================
+
 # pip install openai
 # pip install python-dotenv
 # pip install openai==0.28
@@ -8,7 +36,7 @@ import os
 import openai
 from dotenv import load_dotenv
 
-# load the .env file
+# Load the .env file
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -19,14 +47,21 @@ RECORD_FILE = "record.json"
 def load_profile():
     if os.path.exists(RECORD_FILE):
         with open(RECORD_FILE, "r") as f:
-            return json.load(f)
+            profile = json.load(f)
+            if "interests" not in profile:
+                profile["interests"] = []
+            return profile
     else:
-        return {"completed_courses": []}
+        return {"completed_courses": [], "interests": []}
 
 # Save student profile to json
 def save_profile(profile):
+    if "completed_courses" not in profile:
+        profile["completed_courses"] = []
+    if "interests" not in profile:
+        profile["interests"] = []
     with open(RECORD_FILE, "w") as f:
-        json.dump(profile, f)
+        json.dump(profile, f, indent=2)
 
 # Displays user's completed courses
 def display_profile(profile):
@@ -68,7 +103,7 @@ def update_profile(profile, courses):
         if added_any:
             save_profile(profile)
     
-    # can add interests,. will display their current interests and a list so they can see what they can add to make code work
+    # Can add interests. Will display their current interests and a list so they can see what they can add to make code work
     elif option == "2":
         print("\nCurrent interests:", profile.get("interests", []))
         
