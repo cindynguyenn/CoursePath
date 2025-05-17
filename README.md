@@ -24,10 +24,10 @@ Features include:
 - record.json | User data storage/user profile
 
 # Getting Started:
-pip install openai
-pip install python-dotenv
-pip install openai==0.28
-python gui_coursepath.py | for GUI interface
-python coursepath.py | for CLI interface (less buggy)
+- pip install openai
+- pip install python-dotenv
+- pip install openai==0.28
+- python gui_coursepath.py | for GUI interface
+- python coursepath.py | for CLI interface (less buggy)
 
 Make sure to create a .env file to store the OpenAI API.
